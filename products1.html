@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Codespace</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        background-color: #f0f0f0;
+      }
+      .navbar {
+        background-color: #343a40;
+      }
+      .navbar .nav-link, .navbar .navbar-brand, .navbar .basket-link {
+        color: white;
+      }
+      .navbar .nav-link:hover, .navbar .navbar-brand:hover, .navbar .basket-link:hover {
+        color: #adb5bd;
+      }
+      .card {
+        margin-top: 20px;
+      }
+      .header-container {
+        text-align: center;
+      }
+      .subtitle {
+        font-style: italic;
+        color: #343a40;
+      }
+      .footer {
+        background-color: white;
+        color: #343a40;
+        margin-top: 40px;
+      }
+      .footer p {
+        margin-bottom: 0;
+      }
+      .card-img-top {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+      }
+      .header-image {
+        height: 100px;
+        width: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Landing Page.html">MK Time</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="Landing Page.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="products1.html">Ladies Collection</a></li>
+                <li><a class="dropdown-item" href="products1.html">Mens Collection</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login1.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="forms1.html">Register</a>
+            </li>
+          </ul>
+          <span class="navbar-text basket-link">
+            View Basket <span id="basket-count">0</span>
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container header-container">
+      <h1 class="my-4">MK Time</h1>
+      <h2 class="my-4 subtitle">We are an Edinburgh based company where we style and distribute our products.</h2>
+      <img src="https://images-aka.ernestjones.co.uk/blog-pages/Swiss%20Made%20Watches%20to%20last%20a%20Lifetime/smw3840x1212.jpg" alt="Swiss Made Watches" class="header-image">
+    </div>
+
+    <div class="container mb-4">
+      <h2 class="text-center my-4 subtitle">Our Stylish Collection</h2>
+      <div class="row">
+        <!-- Row 1 -->
+        <div class="col-lg-3 col-md-4">
+          <div class="card text-center">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMWFRMWGB0XGBUYGB4WGxYVGhgXGB8ZGBgaHyoiGBolGxYYITEiJikrLi4uFx8zODMsNygvLisBCgoKDg0OGxAQGi0mICYvLS8tLS0tLS0tLy8tLS8tLzctLS0tNSstLy0tLS0tLi0vLS0rLS0vLS0tLS0tLS0tLf/AABEIAQMAwgMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABQMEBgcIAgH/xABJEAABAwIDBQQGBQgIBgMAAAABAAIDESEEEjEFBkFR8BMiYXEHFDKBkaEjQlKxwVRicoKSstHhFRckM2OT0/EWQ3OiwtJkdMP/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EACQRAQEAAgMBAAEEAwEAAAAAAAABAhESITEDUSJBYXEyUqET/9oADAMBAAIRAxEAPwDeKIiAiIgIiICIiAi5t353zxsmNmfFiZ4oo3lsbI3uY0NacoJa0gOzEV71daaWURFvntUAD17EWtd1T7yRUnxKzzibdUouWP8AjTan5diP2v5L5/xltT8uxH7anOG3VCLlU747U/LsR+2h3u2n+XYn/MKc4bdVIuUZt69pkU9exVDrSVwt5hZB6MN68XHj4RLiJZI5n9lI2WR0gJdZpGYmhDi248Qrzht0ciItKIiICIiAiIgIiICIiAiIgIiICoY+XJFI/wCyxzvgCVXVht91MNN+g4fEU/FSjm3aGzu9Smrvj4D419xX3+jB11181Lzt+lFq315GjjQDxANeVBwVUsXnZQX9HDkvn9HDl111xU4WeHXXXBUy3r4oIb+juuuvx+/0f1119yl8oQNHXXXzQRI2eEwGBLJAQMpBqDxFDUV+8eXgpgN666+apsAElaWtfmSAKU5W18+FyHRGFmzsa8aOaHfEVVVRu7T64SA/4bR8AB+Ckl6Y0IiICIiAiIgIiICIiAiIgIiICid6nUwkv6I+bgFLKE30fTByn9H99qmXg0rIPptTUA2uBTu8vrVob3Fai1lVHXXXPSqtnSfScKXtoR7N+YFR8q+ArF3XwPDrlay8zIeuuvvVNy+1666+a8k9ddcUHhfQeuuvch6v1Torw49dePzKCqD1118FSkf3xe9NOAFamvC9ffTkleuuvkqWIeajQC/mSKGn4/H3Bvfcx9cFD5EfBzh+Cm1jfo9fXAx+BcP+4n8Vki9OPjQiIqCIiAiIgIiICIiAiIgIiIPE0oa0udZrQST4AVK1lvVt/FYjDSSiMQYMFtGvFZZavYATwjAJrQVPdHe1C2NtQVhlH+G790rnHfHfWfEulie8RiJpLIY7tLwWD6SQ0znKXmgAAoNSpfBeHEtAuR1Tr3K0xO24WEZnUrpYnTy6qVj+wMJiZw6V9GQAEdtIezjzV0B1e6x7rQ4+Cu9lYeOSaIOa1wJIJN71FgDb2ch046rnPn+U0nNn4xs1mZz+jGXU+duualTgIgAX4qFng+SKM/B8gW2MLsuJmDLWRtb3OAHLjzWuPQFsSF2HllkhjfKJXND3MDnNAaywJFRevxWuEXSJdgojXJiY5KfYlhf8hIrKCLOXhpcCwVIc3LUeFHHMt0bbjAaRwWjN9qZzbj8FeGIpDabKuANctAdQRX/bgVWZjGnj1196wvZsrnSlh7wJ11datDXjTW/AFTO39kytiEkJErG1c98dyxtB7bCA5oqD3qZfFYvz/CabQ3T3ixmHg7WKNs+FDy18PsvaQGkuY/mQ72XChoLtuVtfZW0GYiGOZlQ2RocA4UcK8HDgRofELmPc3eybCsZSZoD3OJjlBMUlMjbuF43UBAeBS17Lo/c8H1KBxblL2CQtBqGmSsmUEagZqV8F0k1FTCIioIiICIiAiIgIiICIiAiIg8vpQ10peulPFc3PwWGwhkhZEMXjZHOzZ7sibnNM9DxFDlBBNe9SzTnPpK37e55wOCd3/wDmTDSNvMHny9x4tK13g4TTssOHOLtXj2pDxNeDdb/hqP6TeF2NmIlxknaOaKBpo2ONo+qxg7rGimgHwXva2AaZYJoqZXENFLgvFSynDvirK8xGFcbK3SidD9I5znOGoJa2M8g3iQda8tArHZLy0yYKfSpDXA6O17ruBrRzTqCOaY545dRc/llhJlW7dnyB2FB4Fn4LBPQbZmNZ9nFyD9xTW5G2u0gkw8hAxEI7wFg9hrllYPsuvb6pBHInH/QxJSTaA/8Aly/eERnW3fZK0BvrJ9IVvreGTuO8loDbULp8T2bBVzjbkBxJ/NGp+GpCD76PdnNDpMRIaBgIaTYBxu418G2/XPJZHi8NG76aJ+RwuJYzQg8zTX71G7UgLI48LDpYPebAEmtXnQVJzH3c1J4zdfDiGlC17R/ei5c7xbo6p4fBMs5j1Vw+dz7iE2rh4p4xDiGsilFTFiGAMY5zjUh4Fm1NydL1tqekNlFnYxiMgsDQ0U5NFKeBFKUXNU8MsH0OIjcGEVoQdODmcaeCybcHfF+BlbBK4vwslAx/2eQ8wKU8LaUyP6Tzqt8ovEMoc0OaQWuAII0INwQvaAiIgIiICIiAiIgIiICwj0qb1ep4bJHeeXutaNTmsB+sa+5r6UNFku0d4MJA8Rz4mCKQgEMfI1riCSAQ0mpBII9y0RvPt71jGvxbswZGz+zh2jpZO6C0glvcYK0rXNU0uhWP4+J0Q7IHPLI+kzxcyTO+o3mASWjxrzWzd2dinAw/SytjkfQPkAc6lQPo2ubdlCKVAvzGg1ccTNDLFNG0O7JwfQ3q4VFxrShOnNbJ2dvL69DHlY6NjiTKSRSjHNBax/EVcKutRoOhIXP63KWanTr8Zhcbu9r2PASTue/tPbLcrB9G7EBooSwuoWkhpo40LspqRYqO2hhmzNZBHEBI1tG5bFj89C54pVgrbKe8XcBQlZDs1zDI0vZ2haXdk45qkAkkZTTM5tC4VFSKkXBzTG0tnMxAzxuDZiBSQXD6XDZAPa8CKH7JFwZx33F5cbrLxrZj5YpWtlJjxEZIjmbo4HhexBFKsNjYjgRW3G2tHgJsR604xieQyB4a50ZLrkVAJbp9bStKnVTWJwclGxuiFb1LX1o4UPezUdeoIIzA2vwFLBbtlpDXyyMr9XJUWpxfS1wLCi1M/wDZjLCTvGrnb++MMzTHhQ/ESH7DS1ja8XyOAaB5VPgoHBbJMTCI6S4yUgOdTuRg6N8BetNTqsjxmx2hvZ+sPaOTmZQfew1+RVdmCfFH2YjaW0FHggtJNKBoFy41BAOW1yQLi3P8JMN/5VjmEwnqxfHIwPkdVtS40e51LDJWrx9i+atq8L2XYz4Q1wflkjOcwCjnQspUlgPdzhoc7LWjbAHVZVsnZ7MMztJSDMBUu0bEKVozMbGle8b0qSQLKA2jOZpSY2Bhe0HPl7/ZcHur7JdTugjMQC51qMWdSd1vlbeOKF2rho8WTD2ry0kua97chDzQnK13eLzTvCtLrX7sE9pmw8w9ggEa0JqQ5v5pFD+t5rZW3cYIIo8O9sYcQ1znNBL43VLic3E3pXiL8q4VjoZzjJpZHtLHWzaAtDRSgrYC4v466rWHLl2mdx4dM+9C29rnh2BndV7PYJ4jX5ip8wamrgFtpcsYGV8OKjnhBcWHK6lR3dQ4GhBLXUcNbtC35sn0gYKSF0kkoidFEySdrw5ojzgWDiKSd7ujLUk0GtluuUZWigtg73YTFuMcMh7QDN2cjHxOLftNbIAXNrYkVpauqnVFEREBERAREQEREGn9u7tHG7VkfTul+TNTQRtDTQ8CMrj5lZD/AFY4UDu5mmlKtNK+fMKC25vY7AtfNHCZpDjZowypFSZJ+QJ0ZorSH0xYwf3myJSObXPH/wCRQSOP9FpA+hkAI0aRRp04D2bCgy0FySHKM2XsWSJ/YOHYzg521GtLF0bhZ7TW9OdwDpJxemiIf3mAxjPJgd95avO0fSfszFR5JG4mM+01xhOeN40c0sLqEfMVBsU96p5dxfSTVbR/ceKV5teKEEHwNCCq0W0nAAtAc99QWi4Lge84tFxehpxzNIIJKxDaO9Uc0DZMwMrDlLgMvaM4Oym7T4cO8OSpbE20QS5rGOc5pNHmgyiwIcAS11RUEcguUnC/w73L/wBJPy2PsyGshJeS6t3A1zGlPa0Lbi1LFtlfQ4VjXvBvVwcSST3qGwrYWr5VpwAWI7O2yQ4RObXEPaM7ow6LIHNqGlxLg6QaFwoRVZRsoMYA3KRlqaHvGpp3re0fd7lvrbl3pd4vDRG5sTxrUHhf4aqzZh6ZzcknvVtmcPLQaeIDW00Cu55czHB/dIFq2Naa0I0WP7U28WNIa1rzm7tHtbYn69yRfiAdQkkib2t9uTZe/I6sLGukAIHec0/Wv33ZsuVtO8S0mtKCJmxzsJEJZ2kySnPT7bnEd5zj7LBbxoB5KK2rtbNE5tHXLjR0gkyuYHOyscAPo8ocL1PeGlL4jjsTiZ8S3BundK3U5HVa9pAIaywNSaChpSmllNTKty3CMq2XBPtOWsLKtaTmmdZtXGpP8BcrO9nejuFtDK4yP8bNHkPxWO7Fx22MPC2GDZ2HY1o4y8eZpRXTto7yO9mDAs8y8/8Akt/tqOd7u6zOHdXDtFAxoHktbelbZfqZjmhoGOfGHinJ5cKcqOAPvV5icPvO/TEYSL9EA/vRuWObSG0CZMJtSQSGkEjHtDR3JMQ2B1CGtqQX8Rw5FBe7Q2nicPtDZLpnueJJgQXOzFgkAieL6d2a/wCit5rU/pC3eYIcNiM9XYV7RG0ClG2FDUkn2GnnZbYQEREBERAREQEREGqd28N2uLJkALI8XipG+JLpmX8jI5bC7CL7I+C1xFtQYaeVp1GIn+DppHfwUoN7Wc0GYPwkR1Y34K0n2VhzrEw+4LF375xjirOTflp9kFx5Dn9w0OvInQIMF9NWDjhxUIhGUPjBka2wrmcGk+JAd+yrXYEhL2itA5mUHlWRw6803rxgxUtXDMa1qCaVoB3fAABotehOpKvN19kudIGAtrTM3MSKltO6CAaEd119anksfTzTfzuu1xtATxua9pyyl7i51S4VsQai1zVZXgJ9ozlr5S3TLWlCeVG2rcA0rUg08FZywzDK+EPNWkOaw17MtANxa16U+Fwsk7ZrZH9pVwplZU0DQAAHE/WBIJvavO9Jj53/AN/lb7uIfb7sSyokIo5j2tAjMYL8jiCATY1Av+cFgBw84kPbEtcGtNCb5XZvlY/FbVxkrMrhZzcmYtLSA1zS0E1F696gI5nWihYsBE7LNJDKGXy94PNeDsobccL2o0W4pd+Q33yqDwGxHPhBPd7MOJHm12vuI+KxrdXDSYbbUHb0ocrvaBoJIy1laGxDntFDoSs3x2Ldh45YCe/LlOYmncNya6XcALc1iu+eDc1zMTHhnxvbUTijmB+e5DXE2IoSMvGruQWsZpM7tvaPEBVm4oLTWy9+H5RmdUganul450+1zaNDpahUtDvuDxWmG0fWwtfeliASR5h7XZGPzzYvAkfNvzKot3waeKhN6t4WvZHU93tYg7y7aJ508Iygltm7vuOCxEs0glayAHDilMgIdqfrWDfgtwrU+OMTIssWRoe3sw1kmbuv7oaWV7tyDQjgtsICIiAiIgIiICIiDnn0smWLaE4YwlvdlqPzm1d+KwJ23idC5dT7a3RwWLkEuIw7JJA0MzGoOUEkCxFbuPxXO++m6TcDjXQltY31MJINqOLgNaOq0gV5gjhUhCwYp8mhJHPQD38T4AHzCmsDG4tIbU3DTfvOc6+UCtgaaeFyaWisr3FjGUq9wYOHecaAeAWebJ3X9Tb2ubO//m2sGfmDXu0qftDMLVWc85h1+7Xzwuff7KeA3eyDM+7jSvmbAD30AWUO2JlgaxxDZg7NHl1bMcxAFNTRpaSbd0N+0VI7FwVXh8rwTd0YP0eZxo0PoPZFSAOWYuuaUv5i2F2anaYhwq2NtAGNdb2tWR0AFya5TlBtTOM/et52X9OMREO0A2ZoliEUxHfaT3HmhJkjOmgu3WpHmvm1p4A5xkYYiWAiZrhDKBlbRprQuNaty6AUtyu8dAZGUxJa5upjDaN+Jq404XA40rdY1itgNvJG9zbe1KWuAA4ZngkNorMt9RLhx7qvNtaGYshD8jHPo9wc0ucA05RmLQ0EuAAFCKuBJKnXbbY1sbOyIloGtwwdmf3TkoeLBTK6rwKgnQgrFMNsETnLJO10dRXsiw+8kNFFM7q7Pa15hhcy5cJM1nltCQaEHtCHAcRTUKyWes3KXqKmLwU0TxPK1srzXtQW9oGizgGtoatbQkgCpqXNrTKLbEbwOLpw2D6STK7M+QSxZadyWCg7zHC4N9KWIIGX4B4yPZLIHCJ/ZGQtdGA8ZXBpLtfabRzSb6Govj+39iBr6Qu74zP7LKTQuq5xYGAmj8pL2NFC6kjKOLmSMpddLhZvvxqbbWxX97KB2g7xZoHj7TOXkLg6eONR7UcLG/yI/B33rc3q8c7L2IOoIzMd4OFR7xUEcwtXb8bLezEvq8PoxrgQKWPdDSOBs4rn8/pcuq6fX5TGcp4jjth44VHw+IUxgsJNicO9+U5A3tHEAuyxtljjLvJueRxNNArTdDYrsRJGwCpe9rQLV1BNCQcooCSeRC6q2HsOHCxRxxxsBYwR5g0BzgABc6mtKrs4NJ7qbDxT8ZBG4ns87JD3DV0cbg/M4kUANKVHF638rfB4CKKoiiZGDrkaGV86C6uEBERAREQEREBERAWD+lfdP13C5mWmh7zSNaC/vob8bFwAqVnCIOTXNc5hcAWyMcBI0WLHt4inAm4I5LP93tqPxjWscwyOFnRtdk7R1O68kEEtrSrWkX8KUlPSXuO6KQ47BtF7SRaNc37J5fmngbaZaa+geQO2w5cADRzad6J/Frm8D4fDkpljMu1wyuPTYUWNfGTF6uXGPK5ofV7oCSczmNea83BjjUnwsb/B7QYAXMLpC4uJeS36R37wcBSuagGlBYLDthb3QtaRN3HVqXAFwefdcHhQ2tqqOztoOmnkxTiWRgeyLVAFg4D2iBc+JC5SZZXVjtcscJLKyyaeR72tDe1nkJ7KEGjRTV7zwY2oJcdLUFSAaG6GzhicXihjA2d2Hl7NocKxtIaDVkZsLk3NSsx3F2VkjfPIPppbH/DY3SIeRrU8XVOlAILcBv8Ab9qf/Yb82Lt1Oo4W23dXu8G62Fc0uELY5AO7JEOze3yc2lR4Go8Fr7D7V+kMEzvp21ySju9o0cxpnFNNDqKaLcW02d0rnv0gRFk5c2xBqCOYQZ2NphzayjtMtfbkOU908ZCezprTiBatwLeTbU/YZWgdl3WNleKOY0kZmsdTM2CtCHWLb07tKYJPjjiIGyAkPb7QBoKjjTnxHK4U03fQGEVjc+amUgN7pP2i7gDy1+9csscsfO3bDPHKfq6Su2ZHYQ9pkiY7L3RGQRICBRpDSQ9vEvJrc0PLAJ5XyPfJIaukNSdK04+DQBlHl4L2ZnOGaQ0aNBoKcmjgPmfiRmno03JfjpRPM0twzCDQ2zUoQPhS3AUP2a9Jjq7cssrZpmXob3U7NnrkraOcC2IHg0+0+nAnTyr4LaS8xxhoDWgAAUAGgAsAF6VQREQEREBERAREQEREBERB8e0EEEVBsQbgjxWhtobKim9YxWHmbFPC+TtGnQQh7iwSs+uzs8tHe0B9qgA3ri5cjHv+y0u+AJXOW/Wx2xOknDZIZpWFpbWrJWFvtNeDldZoBbqKgkCxIGYptWtkAie+7auDopR9qGUd1w8OGi9YnEmExsa0NOdpDaWrWrfMVBP6ixHdvGSxtkYaGMlpMUgzscb3ym1baih8VfjEszMfQRtZJ7PeI72gaSSbBp15m6vLbPF0xsCPLhmDkwfcsF9GMubHbWPLEgfAPH/isn3Z3mws+GHZzMLg27cwqLclrX0abx4fCY/aTMTK2Htpu0jMhytcM8pPeNhZ7Tc3Uaba2iLFaI9JkP0hK3Tidt4Z7asxELgdC2VjgfeCtQ7/ADDM+kTXSOOgjBkJ8g2pKDXmw8VlkMfB2n6XJTBYMwYAZH8Io7kDm4i0bb3JUPLsaRkuWYGM65PrUrS9NPv8FcbYmkDGQxDJEQS5jBlDiCR33avsPrE+CvLTNm2R4bZUbIDjcVLGWtLhHE0hzTI36rftv5u0111HSmyo42wxiJobHlBaBpQitfGta141XMG52xWTMAlY6V8bnZIQatOYNJc6tmgZaZiQOF7BdJbouPqWHzUDhG1pAOYAtGWgPEW1UaS6IiAiIgIiICIiAiIgIiICIiCli4BIx7Do9pafIgj8VpvePZ+PwuHdh529tA7KGztvlIcPaHA0qKjWugW6VC75srgpx+ZX4EH8FL4OeJNnjl8h5/grSXZxHAEVzEEWJANzTwdwU4HXIp7+BuBb3/evuQcvl15Lzy6ZROHrGa+rw2/6oIOmufn96nYN8MQwUEVuXaPP3gq27Icl9EA5Drr4VV51Vebe3EP1iHukeP3QFZ4ba2Jjk7SKOJkhBGekj3UOt3OP3K4bEOXVf4/Je2ximny66IV50RGKw80z+0kILuYaBrfWxVaLZI4/h4dealadW8B/JeXPpY1v4cfE08/+1ZttRdbAwONlYcPg4SQ5+Z0ru7G3utHfdqTY90XW6929muw2Fige/O9jaOeBQOcSSSBwFSVA+i6OmFf4yn9xizFd8fGhERaBERAREQEREBERAREQEREBRm8za4Scf4bvuqpNWW221w8w5xP/AHSpfBz4GEyH7Ir5kkjhwFPlVe3Dr+Hw+XivsrfpdbAm3EuNTUngKZqqoR1p1/Ci8zKkOuqfDwXsdfd14FfKdddUX3rj1/JB7HXXVl9y9fxt8fcvLeuurKo0Dy693RHJB9A6/jTlofCpVGSM5xTQijtLDMNePChPvVx1e9KAD5aa6UVKUEvbSlAO9etqtAFL2q0gnkBzQbc9HDKYU/8AUPn7LLFZUsb3AH9l/XP3N6+CyRejHxoREWgREQEREBERAREQEREBERAVHGNrG8c2kfIqsvjhUUQc7YgfSVrTKdOFSKCvkbnxAC9kdfA3/H3LztIAS3Hsn7iB7wK18wEcfL+H8fxr4Lysvh6r8f5/JfKddDqy+16/26qvleujzQem9afw6CqsPXL4Hh91eSotPn1WnHxPzXsHr/cdBBWr7v5fDgfgRyVF7ayNvYAAt1qSag1vYZDUcRlXoO6HkeR8fgTyVF5b2gNbigpwuCc2nC48nKjdW4Y/sjfMrIVB7kj+xxfrfvFTi9GPjQiIqCIiAiIgIiICIiAiIgIiICIiDnXe14jxMzSB3JX0qNC1xDTTlUD5Kz9b04fh1wV56WWmLaM40Dssg4VDmNJ4/azD3LEY8caXNTx8+K89iMg9ZHVeR/D+K+esDoddeagfXV89c666+SmkZB6wOh1/L3r03FdXCx31tehjfFNDIRihb3cuuqcVTixQ7QmhrpxsNRx1qXefuUD654rzh8ZqSRr8Rz/2QdQbnD+xQeLa/Ek/iplWG78GTCwMOrYmA+eUV+av16J40IiKgiIgIiICIiAiIgIiICIiAiIg1F6ct0553RYrDQumIb2UjGAudQEljgwXcKucDS4t7tY4P0f7VcKtwMoFvaysNwDo9wPEeVxqF1Wizxg5dHo52v8AkT/24/8A3X3+rja35E/9uL/3XUKJwiacv/1bbX/In/5kX+on9Wu1/wAid/mRf6i6gROENOYHejPbH5E7/Nh/1F93f3Ax78TDDLhJWMc5pke5mVjY6guJfoTThWtbcLdPInCGgBERaUREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREH/2Q==" class="card-img-top" alt="Image">
+            <div class="card-body">
+              <p class="card-text">Classic MK £543</p>
+              <a href="#" class="btn btn-primary add-to-basket">Add to Basket</a>
+            </div>
+          </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="col-lg-3 col-md-4">
+          <div class="card text-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSUY4IvImDoG5zEn326yNjb_irwI5wxJ37Ew&s" class="card-img-top" alt="Image">
+            <div class="card-body">
+              <p class="card-text">Classic MK £468</p>
+              <a href="#" class="btn btn-primary add-to-basket">Add to Basket</a>
+            </div>
+          </div>
+        </div>
+        <!-- Row 3 -->
+        <div class="col-lg-3 col-md-4">
+          <div class="card text-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTapOBz_42gna8zAbL3RnbEstFi_HTL3d2HLQ&s" class="card-img-top" alt="Image">
+            <div class="card-body">
+              <p class="card-text">Classic MK £764</p>
+              <a href="#" class="btn btn-primary add-to-basket">Add to Basket</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more rows and cards here -->
+        <div class="col-lg-3 col-md-4">
+          <div class="card text-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4cnD1Z5sB6ZFa5E-aodw-M_Mu9xzre9rQ4w&s" class="card-img-top" alt="Image">
+            <div class="card-body">
+              <p class="card-text">Classic MK £758</p>
+              <a href="#" class="btn btn-primary add-to-basket">Add to Basket</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <div class="card text-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrJv449B4foDsql7j4ZOH-S6VTwC74yuYtPg&s" class="card-img-top" alt="Image">
+            <div class="card-body">
+              <p class="card-text">Classic MK £893</p>
+              <a href="#" class="btn btn-primary add-to-basket">Add to Basket</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <div class="card text-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtHyYRWLsAe_NmtlrAOB3BpfpzPF1ms9lrfA&s" class="card-img-top" alt="Image">
+            <div class="card-body">
+              <p class="card-text">Classic MK £764</p>
+			  <a href="#" class="btn btn-primary add-to-basket">Add to Basket</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <div class="card text-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrNbyGmfCI2N3VlTEXkjcfo8t4pm8w8TatTg&s" class="card-img-top" alt="Image">
+            <div class="card-body">
+              <p class="card-text">Classic MK £578</p>
+              <a href="#" class="btn btn-primary add-to-basket">Add to Basket</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <div class="card text-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqIXPdEtHeiuNLXf3DTxcyxPhJW7-v1eXBoA&s" class="card-img-top" alt="Image">
+            <div class="card-body">
+              <p class="card-text">Classic MK £457</p>
+              <a href="#" class="btn btn-primary add-to-basket">Add to Basket</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="text-muted text-center">We guarantee service and repair of any of our products in the unlikely event they go faulty.</p>
+          </div>
+          <div class="col-md-6">
+            <p class="text-muted text-center">
+              <span class="font-weight-bold">Contact Us</span><br>
+              <span class="small">1 Street Name, Edinburgh, EH1 A8C, Scotland.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        let basketCount = 0;
+        const basketCountElement = document.getElementById('basket-count');
+        const addToBasketButtons = document.querySelectorAll('.add-to-basket');
+
+        addToBasketButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            basketCount++;
+            basketCountElement.textContent = basketCount;
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

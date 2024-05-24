@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+<script>
+	let num1 = parseFloat(window.prompt("Input Number 1")) /changing format number to allow it to later compare
+	let num2 = parseFloat(window.prompt("Input Number 2"))
+	let num3 = parseFloat(window.prompt("Input Number 3"))
+	
+	function compareNumbers(num1, num2, num3) 
+		{if (num1 === num2 && num2 === num3) /showing numbers all equal to eahc other
+			return ("All numbers are equal")
+		else if(num1 !== num2 && num1 !== num3 && num2 !== num3) /showing numbers dont equal each other
+			return("All numbers are different")	
+		else
+			return ("neither all are equal or different")}
+			
+	let result = compareNumbers(num1, num2, num3)
+	console.log(result)
+	
+	let num4 = parseFloat(window.prompt("For activity 2: Input Number 1:")) /telling the user what action to take
+	let num5 = parseFloat(window.prompt("Input Number 2:"))
+	let num6 = parseFloat(window.prompt("Input Number 3:"))
+	
+	function checkOrder(num4, num5, num6) /checking order numbers
+	{if(num4 < num5 && num5 < num6)
+		return ("Increasing Order")
+	else if(num4 > num5 && num5 > num6)
+		return ("Neither are increasing nor decreasing order")
+	else 
+		return("Neither are incresing or decreasing")}
+		
+	let result1 = checkOrder(num4, num5, num6)
+	console.log(result1)
+</script>
+</body>
+</html>
